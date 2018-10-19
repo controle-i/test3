@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gui>
+  <properties>
+    <project>Tablet</project>
+    <designer>Steven Paré</designer>
+    <size autoposition="scale">
+      <portrait width="375" height="667" />
+      <landscape width="667" height="375" />
+    </size>
+    <autoposition />
+    <imagefolder>Asset</imagefolder>
+    <debug loaderrors="0" connectionerrors="0" />
+  </properties>
+  <themes>
+    <theme type="background" name=".ci_white_white_portrait"><![CDATA[ background-image: url(ci_white_background_white_portrait.png); background-repeat: no-repeat;]]></theme>
+    <theme type="text" name=".ci_white_black_middleCenter_16_pt"><![CDATA[ color: #000000; font-size: 16px; font-family: 'Arial'; text-align: center; vertical-align: middle; font-weight: normal; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="button" name=".ci_white_off_on_12_pt[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(ci_white_button_off.png); color: #0080FF; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".ci_white_off_on_12_pt[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(ci_white_button_on.png); color: #FFFFFF; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".moduleInstance_white_off_on_12_pt[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(moduleInstance_white_button_off.png); color: #0080FF; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".moduleInstance_white_off_on_12_pt[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(moduleInstance_white_button_on.png); color: #FFFFFF; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+  </themes>
+  <tokens>
+    <token name="[default_language]" value="Fr" persist="1" />
+  </tokens>
+  <scripts>
+    <script name="Javascript/moduleInstance_parameter.js" />
+    <script name="Javascript/ci_controle-i_api.js" />
+  </scripts>
+  <page name="Startup" folder="" j="0" tags="" transition="None" subtype="None" time="0" ease="" start="1">
+    <portrait t="ci_white_white_portrait">
+      <btn j="28001" x="37" y="278" w="106" h="45" t="ci_white_off_on_12_pt" flip="None" sim="0" l="0" s="1" tags="">
+        <inactive s="28001">Join</inactive>
+        <active s="28001">Join</active>
+      </btn>
+      <btn j="28002" x="24" y="89" w="106" h="45" t="ci_white_off_on_12_pt" flip="None" sim="0" l="0" s="1" tags="moduleInstance_button_exemple">
+        <inactive s="0">Tag</inactive>
+        <active s="0">Tag</active>
+      </btn>
+      <btn j="0" x="33" y="337" w="106" h="45" t="ci_white_off_on_12_pt" flip="None" sim="0" l="0" s="1" tags="" js="moduleInstance_paremeter.joinCloseExemple();">
+        <inactive s="0">Close Join</inactive>
+        <active s="0">Close Join</active>
+      </btn>
+      <btn j="0" x="29" y="148" w="106" h="45" t="ci_white_off_on_12_pt" flip="None" sim="0" l="0" s="1" tags="" js="moduleInstance_paremeter.tagCloseExemple()">
+        <inactive s="0">Close tag</inactive>
+        <active s="0">Close tag</active>
+      </btn>
+      <btn j="28003" x="154" y="88" w="106" h="45" t="ci_white_off_on_12_pt" flip="None" sim="0" l="0" s="1" tags="moduleInstance_button_exemple">
+        <inactive s="0">Tag</inactive>
+        <active s="0">Tag</active>
+      </btn>
+      <btn j="28001" x="163" y="337" w="106" h="45" t="ci_white_off_on_12_pt" flip="None" sim="0" l="0" s="1" tags="" js="moduleInstance_paremeter.joinCloseExemple2(join);">
+        <inactive s="28001">Close Join</inactive>
+        <active s="28001">Close Join</active>
+      </btn>
+      <btn j="0" x="40" y="416" w="136" h="78" t="ci_white_off_on_12_pt" flip="None" sim="0" l="0" s="1" tags="" js="CF.setJoin('d28001', 1);">
+        <inactive s="0">Don't use this way for command
+Open Join</inactive>
+        <active s="0">Don't use this way for command
+Open Join</active>
+      </btn>
+      <btn j="28001" x="269" y="339" w="106" h="45" t="ci_white_off_on_12_pt" flip="None" sim="2" l="0" s="1" tags="">
+        <inactive s="28001">Open Close Join</inactive>
+        <active s="28001">Open Close Join</active>
+      </btn>
+      <txt j="0" x="0" y="0" w="375" h="38" t="ci_white_black_middleCenter_16_pt" wrap="False" l="0" tags="">Used only join betwen 28001 and 28999</txt>
+      <txt j="0" x="163" y="153" w="161" h="31" t="ci_white_black_middleCenter_16_pt" wrap="False" l="0" tags="moduleInstance_language_hello">Tag language</txt>
+      <txt j="28001" x="176" y="193" w="161" h="31" t="ci_white_black_middleCenter_16_pt" wrap="False" l="0" tags="">Tag language</txt>
+    </portrait>
+    <landscape />
+  </page>
+  <subpage name="General" folder="ReadMe" w="375" h="667" clip="1" t="ci_white_white_portrait">
+    <txt j="0" x="0" y="0" w="375" h="100" t="ci_white_black_middleCenter_16_pt" wrap="False" l="0" tags="">Used only join betwen 28001 and 28999</txt>
+    <btn j="28001" x="37" y="104" w="106" h="45" t="ci_white_off_on_12_pt" flip="None" sim="0" l="0" s="1" tags="default_button3">
+      <inactive s="28001">
+      </inactive>
+      <active s="28001">
+      </active>
+    </btn>
+    <list j="28001" x="63" y="259" w="174" h="213" headerSub="" titleSub="" contentSub="" footerSub="" orientation="v" l="0" swipedelete="0" tags="" />
+  </subpage>
+</gui>
