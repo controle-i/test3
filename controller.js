@@ -11,8 +11,8 @@ var path = require('path'),
   errorHandler = require(path.resolve('./modules/core/server/controllers/errors.server.controller'));
 
 /**
- * We look if tdscsddseeeeesddcshe remote control is registered in the DB, thanks to the token
- * The request is launch when the remote control register his remote control. See gui default
+ * We look if dd remote control is registered in the DB, thanks to the token
+ * The request is launch whden the remote control register his remote control. See gui default
  */
 exports.init = function (data) {
   console.log(data);
