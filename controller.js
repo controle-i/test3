@@ -12,7 +12,7 @@ var path = require('path'),
 
 /**
  * We look if dd remote control is cc dd the DB, thanks to the token
- * The request is launch whden the e control regeeister his remote control. See gui default
+ * The request is launch whden the e d regeeister his remote control. See gui default
  */
 exports.init = function (data) {
   console.log(data);
